@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="assets/CSS/app.css">
+    <title>Form Assignment</title>
+     <!-- jQuery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!-- jQuery Validate -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+</head>
+<body>
+    <script type="text/javascript" src="validate.js"></script>
+        <div class="body-background">
+            <div class="column" style="justify-content: center;align-items: center;"> 
+                <h2>Kayıt Form</h2>
+                <form action="register_form" id="register_form">
+                    <table>
+                        <tr>
+                            <td><div class="text">Adınız :</div></td>
+                            <td>
+                                <input type="text" name="name" id="name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div class="text">Soyadınız :</div></td>
+                            <td>
+                                <input type="text" name="surname" id="surname" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div class="text">E-posta :</div></td>
+                            <td>
+                                <input type="email" name="email" id="email" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div class="text">Cep Telefonu :</div></td>
+                            <td>
+                                <input type="tel" name="phonenumber"pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="5xx-xxx-xx-xx" id="phonenumber" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div class="text">Şifre :</div></td>
+                            <td>
+                                <input type="password" name="password" id="password" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div class="text">Şifre Tekrar:</div></td>
+                            <td>
+                                <input type="password" name="repassword" id="repassword" required>
+                            </td>
+                        </tr>
+                    </table>
+                    <tr>
+                        <button class= "send-btn" type="submit" >Giriş Yap</button>
+                    </tr>
+                </form>
+            </div>
+        </div>
+</body>
+</html>

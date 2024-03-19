@@ -1,0 +1,37 @@
+.footer{
+    width: 100%;
+    height: 400px;
+    background-color: rgba(20, 47, 49, 0.98);
+    border-top: #1B3E40 solid 15px;
+    position: relative;
+}
+
+.my-btn{
+    padding: 10px;
+    min-width: 10%;
+    min-height: 30px;
+    background-color: #1B3E40;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.my-btn:hover{
+    background-color: #142F31;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.inside-row > a{
+    text-decoration: none;
+    color: white;
+    min-width: 10%;
+    min-height: 30px;
+}
+.footer-author{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: end; 
+}

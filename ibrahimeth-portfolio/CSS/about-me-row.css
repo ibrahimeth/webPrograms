@@ -1,0 +1,12 @@
+.shadow-box-about{
+    border-radius: 25px;    
+    background-color: rgba(27, 62, 64, 0.6);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6); /* X offset, Y offset, Blur radius, Shadow color */
+    padding: 15px;
+    margin-left: 1%;
+    padding-left: 50px;
+} 
+
+.shadow-box-about img {
+    width: 140px;
+}

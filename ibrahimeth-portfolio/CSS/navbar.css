@@ -1,0 +1,33 @@
+
+.navBar {
+    text-align: center; 
+    background-color: #142F31;
+    opacity: 0.95;
+    position: static;
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+
+.navBar ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.navBar li {
+    display: inline-block;
+    padding: 20px 20px; 
+    height: 30px;
+}
+
+.navBar li:hover {
+    color: #2D6A6D;
+    background-color: black;
+}
+.navBar-items a{
+
+    text-decoration: overline;
+    color: #ffffff;
+}
