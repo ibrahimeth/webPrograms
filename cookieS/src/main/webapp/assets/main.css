@@ -1,0 +1,109 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    margin: 0; /* Body'nin varsayılan margin'ini kaldır */
+    background-color: #ffffff;
+}
+.bg{
+    background-image: url('bg.jpg'); /* Arkaplan resminin yolu */
+    background-size: auto; /* Resmi ekran boyutuna sığacak şekilde ölçekle */
+    background-position: top; /* Resmi ortala */
+    background-repeat: no-repeat; /* Resmi tekrar etme */
+    width: 80%;
+}
+.column{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+}
+.row-inside{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+}
+
+.login{
+    width: 20%;
+}
+
+input{
+    margin: 2%;
+    margin-left: 8%;
+    background-color: #11006A;
+    color: #ffffff;
+    border-radius: 10px;
+    border: #ffffff;
+    padding: 10px;
+    height: 20px;
+    width: 70%;
+}
+
+.loginBtn{
+    display: flex;
+    border-radius: 12px;
+    background-color: #444CF5;
+    padding: 5px;
+    width: 40%;
+    align-content: center;
+    align-items: end;
+    justify-content: center;
+    align-self: center;
+}
+.loginBtn:hover{
+    display: flex;
+    border-radius: 12px;
+    background-color: #0c0e2fef;
+    color: white;
+    padding: 5px;
+    width: 40%;
+    align-content: center;
+    align-items: end;
+    justify-content: center;
+    align-self: center;
+}
+
+
+.main-frame{
+    margin-top: 10%;
+    padding-bottom: 1%;
+    width: 35%;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    background-color: #ffffffc0;
+}
+.logout{
+    display: flex;
+    border: solid white;
+    border-radius: 12px;
+    background-color: #872e20;
+    padding: 5px;
+    width: 40%;
+    align-content: center;
+    align-items: end;
+    justify-content: center;
+    align-self: center;
+}
+.logout:hover{
+    display: flex;
+    border-radius: 12px;
+    background-color: rgb(49, 24, 11);
+    color: white;
+    padding: 5px;
+    width: 40%;
+    align-content: center;
+    align-items: end;
+    justify-content: center;
+    align-self: center;
+}
