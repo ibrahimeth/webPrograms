@@ -1,0 +1,104 @@
+body {
+    margin-top: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    margin: 0; /* Body'nin varsayılan margin'ini kaldır */
+    background-color: #F9CB29;
+}
+.bg{
+    background-image: url('bg.jpg'); /* Arkaplan resminin yolu */
+    background-size: auto; /* Resmi ekran boyutuna sığacak şekilde ölçekle */
+    background-position: top; /* Resmi ortala */
+    background-repeat: no-repeat; /* Resmi tekrar etme */
+    width: 80%;
+}
+.column{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+}
+.row-inside{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+}
+.main-frame{
+    margin-top: 10%;
+    padding-bottom: 1%;
+    width: 35%;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    background-color: #ffffffc0;
+}
+
+.header{
+    display: flex;
+    /*align-items: center; /*dikeyde hizzalar*/
+    /*justify-content: center; /*Yatayda hizzaladı*/
+    background-color: #ffffff;
+    height: 80px;
+    width: 100%;
+}
+
+.btn{
+    border-radius: 15px;
+    border: solid #ffffff;
+    background-color: #F9CB29;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+.btn:hover{
+    background-color: #493c0d;
+}
+
+.big_btn{
+    text-align: center  ;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: #ffffff82;
+    padding: 30px;
+    border: solid #ffffff;
+    transition: all 300ms ease;
+}
+.big_btn:hover{
+    background-color: #493c0d;
+    color: #ffffff;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.custom-main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 64px;
+}
+
+.custom-row{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
