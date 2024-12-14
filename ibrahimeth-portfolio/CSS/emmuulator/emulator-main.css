@@ -1,0 +1,26 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(14, 49, 70);
+    background-image: url('../../assets/sad.png'); 
+    background-size: auto; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.cmd{
+    justify-self: center;
+    background-color: black;
+    border-radius: 10Px;
+    border: solid 1px rgb(31, 31, 31);
+    color: #008000;
+    width: 70%;
+    height: 70%;
+}

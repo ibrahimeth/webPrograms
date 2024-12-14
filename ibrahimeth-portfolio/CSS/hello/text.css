@@ -1,0 +1,109 @@
+.text {
+    position: absolute;
+    font-size: 2rem;
+    color: #7e7676;
+    white-space: nowrap;
+    top: 70%;
+    left: 2%; 
+    transform: translateY(-50%);
+    transition: transform 0.4s linear; 
+}
+.textM{
+    font-size: clamp(20px, 3vw, 30px);
+    color: #d7d7d7;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+.textXL{
+    font-size: clamp(20px, 3vw, 50px);
+    color: #d7d7d7;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+.textXL-RGB{
+    font-size: clamp(20px, 3vw, 50px);
+    margin-left: 10px;
+    animation: color-pulse 5s infinite ;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+p{
+    margin: 0px;
+    font-size: 20px;
+}                
+
+.typity {
+    border-bottom: 3px solid rgb(3, 255, 3);
+    margin: 0px;
+    box-sizing: border-box;
+    color: #d7d7d7;
+    font-size: clamp(20px, 3vw, 30px);
+    font-weight: 800;
+    padding-left: 10px;
+    padding-right: 5px;
+    position: relative;
+    transition: background-position 1s;
+  
+    &::after {
+      animation: blink-cursor 0.75s step-end infinite;
+      background-color: transparent;
+      content: "";
+      display: block;
+      height: 2rem;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 2px;
+    }
+  
+    &.highlight {
+      background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.2) 50%,
+        transparent 50%
+      );
+      background-position: 100% 100%;
+      background-repeat: no-repeat;
+      background-size: 200% 2rem;
+  
+      &::after {
+        animation: none;
+      }
+    }
+  }
+  
+  @keyframes blink-cursor {
+    0% {
+      background-color: transparent;
+    }
+    50% {
+      background-color: #c43e3e;
+      width: 2px;
+      padding-left: 1px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    html {
+      font-size: 12px;
+    }
+  
+    .typity {
+      border-bottom: 2px solid red;
+    }
+  }
+
+@keyframes color-pulse {
+    0%, 100% {
+        color: #0c6ba2;
+    }
+    20%, 80% {
+        color: #0eb83b;
+    }
+    40%,60%{
+        color: #e6cc09;
+    } 
+    50% {
+        color: #FF4136;
+    }
+}
