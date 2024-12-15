@@ -1,5 +1,6 @@
 *{
     transition: padding 0.4s ease;
+    scroll-behavior: smooth;
 }
 body{
     padding: 0px;
@@ -46,8 +47,14 @@ body{
     color: #c43e3e;
     font-size: clamp(17px, 3vw, 24px);
     font-weight: bold;
+    transition: all 0.4s ease;
 }
 
+.header .logo:hover {
+    color: white;
+    font-size: clamp(18px, 3vw, 25px);
+    font-weight: bold;
+}
 .nav-links {
     box-sizing: border-box;
     display: flex;
@@ -66,27 +73,35 @@ body{
     transition: color 0.3s ease;
 }
 
-
-  
 .nav-links a::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -2px; 
+    bottom: -2px;
     width: 0;
     height: 3px;
     border-radius: 10px;
-    background-color: #c43e3e; 
-    transition: width 0.3s ease; 
+    background-color: #c43e3e;
+    transition: width 0.3s ease;
 }
-  
-  /* Hover Durumu */
+
+/* Hover Durumu */
 .nav-links a:hover {
     color: #c43e3e;
 }
-  
+
 .nav-links a:hover::after {
     width: 40%;
+}
+
+/* Active Durumu */
+.nav-links a.active {
+    color: #c43e3e; /* Hover ile aynı renk */
+}
+
+.nav-links a.active::after {
+    width: 40%; /* Hover ile aynı genişlik */
+    background-color: #c43e3e; /* Hover ile aynı renk */
 }
 
 

@@ -1,0 +1,18 @@
+.social-media-btn{
+    border-radius: 50%;
+    width: clamp(20px, 3vw, 40px);
+    height: clamp(20px, 3vw, 40px);
+    background-color: rgb(6, 33, 63);
+    border: solid 1px black;
+    text-decoration: none;
+    margin: 5px;
+    margin-right: clamp(17px, 3vw, 30px);
+    transition: all 0.4s ease;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.social-media-btn:hover{
+    background-color: #c43e3e;
+}
