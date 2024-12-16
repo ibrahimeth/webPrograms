@@ -1,0 +1,58 @@
+#about{
+    padding: 0px clamp(0px, 10vw, 180px);
+    padding-top: 70px;
+    background-color: rgba(204, 11, 11, 0.058);
+    box-sizing: border-box;
+    justify-content: start;
+    background-image: url('../../assets/wp-about.png'); /* Arkaplan resminin yolu */
+    background-position: top; /* Resmi ortala */
+}
+
+#about-row-div{
+    box-sizing: border-box;
+    justify-content: start;
+    gap: clamp(10px, 3vw, 30px);
+}
+
+.image-box {
+    border-radius: 7px;
+    padding: 0px;
+}
+
+.image-box img{
+    border-radius: 7px;
+    max-height: 450px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6); /* X offset, Y offset, Blur radius, Shadow color */
+}
+
+.about-box{
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.7); /* Hafif beyaz bir arka plan */
+    backdrop-filter: blur(10px); /* Blur efekti */
+    -webkit-backdrop-filter: blur(10px); /* Safari desteği */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    padding: clamp(20px, 3vw, 30px);
+    background-color: #00060e5b;
+    border: solid 2px black;
+}
+
+.about-box p {
+    width: 100%;
+    text-align: justify; 
+    font-size: 16px; 
+    line-height: 1.6; /* Satır yüksekliği */
+    color: #ffffff; /* Yazı rengi */
+    margin: 0;
+    padding: 0;
+}
+
+#duck-gif {
+    height: clamp(150px, 20vw, 200px) ;
+}
+#about-gif-align-id{
+    align-items: center;
+    gap: clamp(10px, 2vw, 20px) ;
+}
+#about-summary-box{
+    width: 200px;
+}

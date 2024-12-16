@@ -23,6 +23,8 @@ body{
 
 .page{
     height: 100vb;
+    box-sizing: border-box;
+    gap: 20px;
 }
 
 .header {

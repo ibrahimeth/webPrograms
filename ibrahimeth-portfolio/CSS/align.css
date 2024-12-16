@@ -26,3 +26,14 @@
     justify-content: space-between;
     align-content: space-between;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Elemanlar minimum 150px, maksimum eşit genişlik */
+    gap: 15px;
+}
+
+.grid-container .about-box{
+    padding: clamp(5px, 3vw,  10px);
+    height:  clamp(40px, 2vw,  50px);
+}

@@ -15,10 +15,16 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
 }
 .textXL{
-    font-size: clamp(40px, 6vw, 50px);
-    color: #d7d7d7;
-    font-weight: 800;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  font-size: clamp(40px, 6vw, 50px);
+  color: #d7d7d7;
+  font-weight: 800;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+.textL{
+  font-size: clamp(20px, 3vw, 50px);
+  font-weight: 800;
+  color: #d7d7d7;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
 }
 .textXL-RGB{
     font-size: clamp(20px, 3vw, 50px);

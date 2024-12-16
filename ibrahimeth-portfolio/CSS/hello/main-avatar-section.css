@@ -1,15 +1,6 @@
 .hidden{
     display: none;
 }
-.avatar-page-row-trans{
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
 
 .myBio{
     z-index: 2;
@@ -86,12 +77,8 @@
         align-items: center;
         gap: 30px;
     }
-    .textXL{
-        font-size: 1px;
-    }
-    .text-RGB{
-    }
-    .textM{
+    #down-section-btn {
+        margin-bottom: 10px;
     }
     #home{
         align-content: start;

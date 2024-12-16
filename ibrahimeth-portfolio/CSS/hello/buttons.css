@@ -28,7 +28,7 @@
     height: clamp(20px, 3vw, 22px);
 }
 #down-section-btn {
-    height: 80px;
+    height: 100px;
     z-index: 2;
     justify-content: center;
     display: flex; 
