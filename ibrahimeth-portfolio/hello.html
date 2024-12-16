@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="CSS/hello/text.css"/>
     <link rel="stylesheet" href="CSS/hello/media-query.css"/>
     <link rel="stylesheet" href="CSS/hello/buttons.css"/>
+    <link rel="stylesheet" href="CSS/hello/item.css"/>
 </head>
 <body>
     <header class="header">
@@ -32,35 +33,44 @@
     </header>
     <section id="home" class="page">
         <div id="particles-js"></div>
-        <div id="avatar-align" class="inside-row">
-            <div class="myBio column">
-                <p class="textXL">Hi There!</p>
-                <div class="row">
-                    <p class="textXL">I'm</p>
-                    <p class="textXL-RGB">İbrahim Ethem AKBIYIK</p>
+        <div id="avatar-page" class="inside-column">
+            <div id="avatar-align" class="inside-row">
+                <div class="myBio column">
+                    <p class="textXL">Hi There!</p>
+                    <div class="row">
+                        <p class="textM">I'm</p>
+                        <p class="textXL-RGB">İbrahim Ethem AKBIYIK</p>
+                    </div>
+                    <div class="row">
+                        <p class="textM">I Am </p>
+                        <p class="typity textXL"></p>
+                    </div>
+                    <div class="row">
+                        <div class="social-media-btn">
+                            <img src="assets/icons/github-icon.png" />
+                        </div>
+                        <di class="social-media-btn">
+                            <img src="assets/icons/linkedIn-icon.png" />
+                        </di>
+                        <div class="social-media-btn">
+                            <img src="assets/icons/Instagram-icon.png"/>
+                        </div>
+                        <div class="social-media-btn">
+                            <img src="assets/icons/email-icon.png"/>
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-                    <p class="textM">I Am </p>
-                    <p class="typity textXL"></p>
-                </div>
-                <div class="row">
-                    <div class="social-media-btn">
-                        <img src="assets/icons/github-icon.png" width="35" height="35"/>
-                    </div>
-                    <di class="social-media-btn">
-                        <img src="assets/icons/linkedIn-icon.png" width="35" height="35"/>
-                    </di>
-                    <div class="social-media-btn">
-                        <img src="assets/icons/Instagram-icon.png" width="35" height="35"/>
-                    </div>
-                    <div class="social-media-btn">
-                        <img src="assets/icons/email-icon.png" width="35" height="35"/>
-                    </div>
+                <div class="image-container big-image-container">
+                    <img src="assets/pp4.jpg" alt="Dynamic Image" class="tilt-image">
                 </div>
             </div>
-            <div class="image-container big-image-container">
-                <img src="assets/pp4.jpg" alt="Dynamic Image" class="tilt-image">
-            </div>
+            <a id="down-section-btn" href="#about">
+                <span class="button-text-animation">Click me to down</span>
+                <div class="inside-row">
+                    <div class="stick-R"></div>
+                    <div class="stick-L"></div>
+                </div>
+            </a>
         </div>
     </section>
     <section id="about" class="page">
@@ -72,5 +82,6 @@
 </body>
 <script src="script/scroll.js"></script>
 <script src="script/animation.js"></script>
+<script src="script/scrip.js"></script>
 
 </html>

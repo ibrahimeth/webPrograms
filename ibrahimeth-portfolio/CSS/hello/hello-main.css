@@ -1,3 +1,10 @@
+:root {
+    --primary-color: #031121;
+    --secondary-color: #2ecc71;
+    --background-color: #031121;
+    --text-color: #333333;
+    --accent-color: #e74c3c;
+}
 *{
     transition: padding 0.4s ease;
     scroll-behavior: smooth;
@@ -8,7 +15,7 @@ body{
     box-sizing: border-box;
     height: 100%;
     width: 100%;
-    background: linear-gradient(to bottom, rgb(3, 17, 33), rgb(24, 43, 66));
+    background: linear-gradient(to bottom, var(--background-color), rgb(24, 43, 66));
     font-family: Arial, sans-serif;
     color: #d7d7d7;
     margin: 0px;

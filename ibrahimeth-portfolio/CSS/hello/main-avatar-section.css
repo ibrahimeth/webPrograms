@@ -1,10 +1,19 @@
 .hidden{
     display: none;
 }
+.avatar-page-row-trans{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
 .myBio{
     z-index: 2;
     padding: 20px 20px;
-    display: flex;
     text-align: left;
     justify-content: center;
     align-items: baseline;
@@ -23,9 +32,12 @@
 #home{
     background-color: #0000001b;
 }
+#avatar-page{
+    
+}
 #particles-js {
     position: absolute;
-    width: 98%;
+    width: 100%;
     height: 100%;
     z-index: 1; 
 }
@@ -33,8 +45,8 @@
 .image-container {
     border-radius: 50%;
     position: relative;
-    width: clamp(0px, 40vw, 400px); 
-    height: clamp(0px, 40vw, 400px); 
+    width: clamp(200px, 30vw, 400px); 
+    height: clamp(200px, 30vw, 400px); 
     overflow: hidden;
     padding: 10px;
     perspective: 700px;
@@ -60,11 +72,26 @@
     .hidden {
         display: flex;
     }
-    .big-image-container{
-        display: none;
+    #avatar-align{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: 0px 10px;
+        margin: 10px;
     }
     .myBio{
         width: 100%;
+        box-sizing: border-box;
+        align-items: center;
+        gap: 30px;
+    }
+    .textXL{
+        font-size: 1px;
+    }
+    .text-RGB{
+    }
+    .textM{
     }
     #home{
         align-content: start;

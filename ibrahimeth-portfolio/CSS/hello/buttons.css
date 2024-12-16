@@ -1,18 +1,51 @@
 .social-media-btn{
     border-radius: 50%;
-    width: clamp(20px, 3vw, 40px);
-    height: clamp(20px, 3vw, 40px);
+    width: clamp(35px, 4vw, 40px);
+    height: clamp(35px, 4vw, 40px);
     background-color: rgb(6, 33, 63);
     border: solid 1px black;
     text-decoration: none;
-    margin: 5px;
+    margin-top: clamp(2px, 4vw, 10px) ;
     margin-right: clamp(17px, 3vw, 30px);
     transition: all 0.4s ease;
     text-align: center;
+    padding-top: 3px;
+    box-sizing: border-box;
     align-content: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .social-media-btn:hover{
     background-color: #c43e3e;
+}
+.social-media-btn img{
+    padding: 0px;
+    margin: 0px;
+    justify-self: center;
+    align-self: center;
+    width: clamp(20px, 3vw, 22px);  
+    height: clamp(20px, 3vw, 22px);
+}
+#down-section-btn {
+    height: 80px;
+    z-index: 2;
+    justify-content: center;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+    text-decoration: none; 
+    color: white; 
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#down-section-btn:hover .stick-R {
+    transform: translateY(0px) translateX(8px) rotate(225deg);
+}
+#down-section-btn:hover .stick-L {
+    transform: translateY(0px) translateX(-8px) rotate(-225deg); 
 }

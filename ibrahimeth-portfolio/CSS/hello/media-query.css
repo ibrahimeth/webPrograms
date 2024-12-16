@@ -15,7 +15,7 @@
     }
 }
 @media (max-width: 1000px) {
-    #avatar-align{
+    #avatar-align{ /* mybio frame ayarı */
         padding: 0px 10px;
     }
     .header{
