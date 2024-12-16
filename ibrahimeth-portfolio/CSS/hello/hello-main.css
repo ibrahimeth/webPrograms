@@ -9,6 +9,14 @@
     transition: padding 0.4s ease;
     scroll-behavior: smooth;
 }
+a{
+    text-decoration: none;
+}
+
+.icon{
+    width: clamp(10px, 2vw, 30px);
+    
+}
 body{
     padding: 0px;
     margin: 0px;

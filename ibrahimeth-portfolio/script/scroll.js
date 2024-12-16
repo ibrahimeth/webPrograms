@@ -31,3 +31,24 @@ hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('active');
   hamburger.classList.toggle('active');
 });
+
+
+
+const boxes = document.querySelectorAll('.about-box');
+
+function checkBoxes() {
+    const triggerBottom = window.innerHeight * 1; // Ekranın %80 yüksekliği
+
+    boxes.forEach(box => {
+        const boxTop = box.getBoundingClientRect().top;
+
+        if (boxTop < triggerBottom) {
+            box.classList.add('show'); 
+        } else {
+            box.classList.remove('show'); 
+        }
+    });
+}
+
+window.addEventListener('scroll', checkBoxes);
+window.addEventListener('load', checkBoxes);
