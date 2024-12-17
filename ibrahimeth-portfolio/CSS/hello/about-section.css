@@ -1,5 +1,4 @@
 #about{
-    padding: 0px clamp(0px, 10vw, 180px);
     padding-top: 70px;
     background-color: rgba(204, 11, 11, 0.058);
     box-sizing: border-box;
@@ -11,7 +10,9 @@
 #about-row-div{
     box-sizing: border-box;
     justify-content: start;
-    gap: clamp(10px, 3vw, 30px);
+}
+#about div.row, #about div.column{ /* about section içerisindeki bütün row divlerinin özelliklerini ekle*/
+    gap: clamp(10px, 3vw, 30px)
 }
 
 .image-box {
@@ -25,6 +26,10 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6); /* X offset, Y offset, Blur radius, Shadow color */
 }
 
+#pp6{
+    display: none;
+}
+
 .about-box{
     opacity: 0; /* İlk başta görünmez */
     transform: translateY(30px); /* Aşağıdan yukarıya kayma */
@@ -34,7 +39,7 @@
     backdrop-filter: blur(4px); /* Blur efekti */
     -webkit-backdrop-filter: blur(4px); /* Safari desteği */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
-    padding: clamp(20px, 3vw, 30px);
+    padding: clamp(15px, 3vw, 30px);
     background-color: #00060e5b;
     border: solid 2px black;
 }
@@ -48,19 +53,72 @@
     width: 100%;
     text-align: justify; 
     font-size: 16px; 
-    line-height: 1.6; /* Satır yüksekliği */
+    line-height: 1.6;
     color: #ffffff; /* Yazı rengi */
     margin: 0;
     padding: 0;
 }
 
 #duck-gif {
-    height: clamp(150px, 20vw, 200px) ;
+    max-width: 100%;
 }
+
 #about-gif-align-id{
-    align-items: center;
+    width: 100%;
     gap: clamp(10px, 2vw, 20px) ;
 }
+
 #about-summary-box{
-    width: 200px;
+    box-sizing: border-box;
+    align-content: center;
+    max-width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width: 1230px) {
+   #about-row-div{
+    flex-direction: column;
+   }
+   #about-gif-align-id{
+    flex-direction: row;
+   }
+}
+
+@media (max-width: 720px) {
+    #about-all-align {
+        flex-direction: column;
+    }
+    .image-box img {
+        width: 100%;
+    }
+    .about-box p {
+        font-size: 14px; /* Yazı boyutunu küçült */
+    }
+    #pp5{
+        display: none;
+    }
+    #pp6{
+        display: flex;
+    }
+    #about-summary-box {
+        height: auto;
+    }
+    #about-gif-align-id {
+        height: auto;
+    }
+    #about-gif-align-id .about-box:first-child {
+        padding: 5px; /* İstediğiniz padding değerini buraya yazın */
+    }
+    #duck-gif {
+        
+    }
+}
+@media (max-width: 480px) {
+    #duck-gif {
+    }
+    #about-summary-box {
+        margin-top: 10px;
+        font-size: 12px;
+    }
 }

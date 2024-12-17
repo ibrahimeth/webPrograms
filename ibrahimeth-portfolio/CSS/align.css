@@ -38,3 +38,10 @@
     height:  clamp(40px, 2vw,  50px);
     gap: 20px;
 }
+
+@media (max-width: 1150px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Elemanlar minimum 150px, maksimum eşit genişlik */
+    }
+}
+

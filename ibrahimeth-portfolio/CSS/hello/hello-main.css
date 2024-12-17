@@ -30,9 +30,12 @@ body{
 }
 
 .page{
-    height: 100vb;
+    min-height: 100vb;
     box-sizing: border-box;
     gap: 20px;
+}
+.page-content{
+    padding: 0px 180px;
 }
 
 .header {

@@ -1,13 +1,13 @@
 @media (max-width: 1400px) {
-    #avatar-align{
-        padding: 0px 100px;
-    }
     .header{
         padding: 10px 100px;
     }
+    .page-content{
+        padding: 0px 100px;
+    }
 }
 @media (max-width: 1200px) {
-    #avatar-align{
+    .page-content{
         padding: 0px 70px;
     }
     .header{
@@ -15,7 +15,7 @@
     }
 }
 @media (max-width: 1000px) {
-    #avatar-align{ /* mybio frame ayarı */
+    .page-content{ /* mybio frame ayarı */
         padding: 0px 10px;
     }
     .header{

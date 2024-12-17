@@ -17,15 +17,10 @@
     width: 200px;
 }
 
-#avatar-align{
-    padding: 0px 180px;
-}
 #home{
     background-color: #0000001b;
 }
-#avatar-page{
-    
-}
+
 #particles-js {
     position: absolute;
     width: 100%;
