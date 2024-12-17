@@ -1,15 +1,3 @@
-const text = document.querySelector('.title-text');
-
-window.addEventListener('scroll', () => {
-  const scrollTop = window.scrollY; // Sayfanın yukarıdan kaydırılma mesafesi
-  const windowHeight = window.innerHeight * .7; // Pencere yüksekliği
-  const documentHeight = document.body.scrollHeight ; // Sayfa toplam yüksekliği
-  const scrollRatio = scrollTop / (documentHeight - windowHeight);
-  const horizontalPosition = scrollRatio * 100;
-  text.style.left = `${horizontalPosition}%`;
-});
-
-
 // script.js
 
 // Scroll ile Header'ın Belirginleşmesi
@@ -45,9 +33,9 @@ function checkBoxes() {
         if (boxTop < triggerBottom) {
             box.classList.add('show'); 
         } else {
+            //ox.classList.remove('show'); 
         }
     });
 }
-
 window.addEventListener('scroll', checkBoxes);
 window.addEventListener('load', checkBoxes);

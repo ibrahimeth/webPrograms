@@ -22,3 +22,22 @@
         padding: 10px 10px;
     }
 }
+
+@media (max-width: 720px) {
+    .page-content{ /* mybio frame ayarı */
+        padding: 0px 40px;
+    }
+    .header{
+        padding: 10px 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .page-content{ /* mybio frame ayarı */
+        padding: 0px 10px;
+    }
+    .header{
+        padding: 10px 10px;
+    }
+}
+

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="CSS/hello/hello-main.css"/>
     <link rel="stylesheet" href="CSS/hello/main-avatar-section.css"/>
     <link rel="stylesheet" href="CSS/hello/about-section.css"/>
+    <link rel="stylesheet" href="CSS/hello/skills-section.css"/>
     <link rel="stylesheet" href="CSS/hello/text.css"/>
     <link rel="stylesheet" href="CSS/hello/media-query.css"/>
     <link rel="stylesheet" href="CSS/hello/buttons.css"/>
@@ -87,7 +88,7 @@
                 <img id="pp6" src="assets/pp6.jpg" />
             </div>
             <div id="about-row-div" class="row">
-                <div class="about-box">
+                <div id="about-p-box-id" class="about-box">
                     <p>
                         I am actively interested in web programming and I develop mobile applications. 
                         I also develop desktop applications and human-machine interactive control interfaces. 
@@ -98,7 +99,7 @@
                     </p>
                 </div>
                 <div id="about-gif-align-id" class="column">
-                    <div class="about-box">
+                    <div id="plant-gif-box" class="about-box">
                         <img id="duck-gif" src="assets/plant-gif.webp"/>
                     </div>
                     <div id="about-summary-box"  class="about-box">
@@ -123,16 +124,15 @@
                 <img class="icon" src="assets/icons/game-controller-icon.png"/>
                 <p class="textS">Playing Games</p>
             </div>
-            <div class="about-box inside-row">
+            <div class="about-box inside-row hide-480">
                 <img class="icon" src="assets/icons/mobile-icon.png"/>
                 <p class="textS">Mobile Development</p>
             </div>
-           
-            <div class="about-box inside-row">
+            <div class="about-box inside-row hide-480">
                 <img class="icon" src="assets/icons/database-icon.png"/>
                 <p class="textS">Database Management</p>
             </div>
-            <div class="about-box inside-row">
+            <div class="about-box inside-row hide-480">
                 <img class="icon" src="assets/icons/full-develop-icon.png"/>
                 <p class="textS">Full Stack Development</p>
             </div>
@@ -147,7 +147,11 @@
         </section>
     </section>
 
-    <section id="skills" class="page">
+    <section id="skills" class="page column page-content">
+        <div class="row">
+            <div class="textM">My Skills !</div>
+            <img src="assets/icons/-icon.png" />
+        </div>
     </section>
     
 </body>

@@ -30,7 +30,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Elemanlar minimum 150px, maksimum eşit genişlik */
-    gap: 15px;
+    gap: clamp(10px, 3vw, 30px)
 }
 
 .grid-container .about-box{
@@ -38,10 +38,18 @@
     height:  clamp(40px, 2vw,  50px);
     gap: 20px;
 }
-
+.hide-480{
+    display: flex;
+}
 @media (max-width: 1150px) {
     .grid-container {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Elemanlar minimum 150px, maksimum eşit genişlik */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container .hide-480 {
+        display: none;
     }
 }
 

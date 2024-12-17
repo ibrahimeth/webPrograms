@@ -22,7 +22,7 @@
 
 .image-box img{
     border-radius: 7px;
-    max-height: 450px;
+    max-width: 400px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6); /* X offset, Y offset, Blur radius, Shadow color */
 }
 
@@ -43,7 +43,6 @@
     background-color: #00060e5b;
     border: solid 2px black;
 }
-
 .about-box.show {
     opacity: 1;
     transform: translateY(0);
@@ -64,6 +63,7 @@
 }
 
 #about-gif-align-id{
+    min-width: 25%;
     width: 100%;
     gap: clamp(10px, 2vw, 20px) ;
 }
@@ -77,12 +77,20 @@
 
 
 @media (max-width: 1230px) {
-   #about-row-div{
-    flex-direction: column;
-   }
-   #about-gif-align-id{
-    flex-direction: row;
-   }
+    #about-row-div{
+        flex-direction: column;
+    }
+    #about-gif-align-id{
+        flex-direction: row;
+    }
+    #plant-gif-box{
+        padding: 0px;
+        width: auto;
+        flex: 1;
+    }
+    #about-summary-box{
+        flex: 2;
+    }
 }
 
 @media (max-width: 720px) {
@@ -91,6 +99,7 @@
     }
     .image-box img {
         width: 100%;
+        max-width: 100%;
     }
     .about-box p {
         font-size: 14px; /* Yazı boyutunu küçült */
@@ -110,15 +119,11 @@
     #about-gif-align-id .about-box:first-child {
         padding: 5px; /* İstediğiniz padding değerini buraya yazın */
     }
-    #duck-gif {
-        
-    }
+  
 }
 @media (max-width: 480px) {
-    #duck-gif {
-    }
+   
     #about-summary-box {
-        margin-top: 10px;
         font-size: 12px;
     }
 }
