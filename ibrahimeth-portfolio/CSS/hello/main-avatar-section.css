@@ -16,7 +16,11 @@
     height: 200px;
     width: 200px;
 }
-
+#avatar-page{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 #home{
     background-color: #0000001b;
 }
