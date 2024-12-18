@@ -2,15 +2,20 @@
     display: none;
 }
 
-.myBio{
+#myBio{
+    backdrop-filter: blur(4px); 
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: clamp(15px, 3vw, 30px);
+    background-color: #00060e5b;
+    border-radius: 7px;
+    border: solid 2px black;
     z-index: 2;
-    padding: 20px 20px;
     text-align: left;
     justify-content: center;
     align-items: baseline;
-    border-radius: 15px;
-    background-color: rgba(17, 15, 15, 0.571);
-}   
+    width: auto;
+}
 .hidden-avatar{
     display: none;
     height: 200px;
@@ -70,7 +75,7 @@
         padding: 0px 10px;
         margin: 10px;
     }
-    .myBio{
+    #myBio{
         width: 100%;
         box-sizing: border-box;
         align-items: center;
@@ -81,5 +86,22 @@
     }
     #home{
         align-content: start;
+    }
+}
+
+
+
+@keyframes color-pulse-border {
+    0%, 100% {
+        border:solid 2px #0e4666;
+    }
+    20%, 80% {
+        border:solid 2px #0e662d;
+    }
+    40%,60%{
+        border:solid 2px #66660e;
+    } 
+    50% {
+        border:solid 2px #6d1915;
     }
 }

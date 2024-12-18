@@ -41,6 +41,13 @@
 .hide-480{
     display: flex;
 }
+
+#row-btn{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
 @media (max-width: 1150px) {
     .grid-container {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Elemanlar minimum 150px, maksimum eşit genişlik */

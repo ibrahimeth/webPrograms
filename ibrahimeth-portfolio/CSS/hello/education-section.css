@@ -1,0 +1,52 @@
+#education{
+    padding-top: 70px;
+    box-sizing: border-box;
+    justify-content: start;
+    background-image: url('../../assets/wp-about.png'); /* Arkaplan resminin yolu */
+    background-position: top; /* Resmi ortala */
+}
+.background-effect {
+    z-index: 5;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .scrolling-text-l {
+    display: flex;
+    gap: 20px; 
+    animation: scroll-left 15s linear infinite;
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.177);
+  }
+  .scrolling-text-r {
+    display: flex;
+    gap: 20px; 
+    animation: scroll-right 15s linear infinite;
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.177);
+  }
+  
+  .scrolling-text span {
+    flex-shrink: 0; 
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }

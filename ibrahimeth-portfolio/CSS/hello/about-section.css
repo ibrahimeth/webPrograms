@@ -1,6 +1,5 @@
 #about{
     padding-top: 70px;
-    background-color: rgba(204, 11, 11, 0.058);
     box-sizing: border-box;
     justify-content: start;
     background-image: url('../../assets/wp-about.png'); /* Arkaplan resminin yolu */
@@ -31,14 +30,14 @@
 }
 
 .about-box{
-    opacity: 0; /* İlk başta görünmez */
-    transform: translateY(30px); /* Aşağıdan yukarıya kayma */
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Yumuşak geçiş */
+    opacity: 0; 
+    transform: translateY(30px); 
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; 
     border-radius: 7px;
-    background: rgba(255, 255, 255, 0.7); /* Hafif beyaz bir arka plan */
-    backdrop-filter: blur(4px); /* Blur efekti */
-    -webkit-backdrop-filter: blur(4px); /* Safari desteği */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(4px); 
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     padding: clamp(15px, 3vw, 30px);
     background-color: #00060e5b;
     border: solid 2px black;

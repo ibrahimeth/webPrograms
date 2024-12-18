@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="CSS/hello/hello-main.css"/>
     <link rel="stylesheet" href="CSS/hello/main-avatar-section.css"/>
     <link rel="stylesheet" href="CSS/hello/about-section.css"/>
+    <link rel="stylesheet" href="CSS/hello/education-section.css"/>
     <link rel="stylesheet" href="CSS/hello/skills-section.css"/>
     <link rel="stylesheet" href="CSS/hello/text.css"/>
     <link rel="stylesheet" href="CSS/hello/media-query.css"/>
@@ -39,7 +40,7 @@
         <div id="particles-js"></div>
         <div id="avatar-page" class="inside-column ">
             <div id="avatar-align" class="inside-row page-content">
-                <div class="myBio column">
+                <div id="myBio" class="column">
                     <p class="textXL">Hi There!</p>
                     <div class="row">
                         <p class="textL">I'm</p>
@@ -68,13 +69,15 @@
                     <img src="assets/pp4.jpg" alt="Dynamic Image" class="tilt-image">
                 </div>
             </div>
-            <a id="down-section-btn" href="#about">
-                <span class="button-text-animation">Click me to down</span>
-                <div class="inside-row">
-                    <div class="stick-R"></div>
-                    <div class="stick-L"></div>
-                </div>
-            </a>
+            <div id="row-btn">
+                <a id="down-section-btn" href="#about">
+                    <span class="button-text-animation">Click me to down</span>
+                    <div class="inside-row">
+                        <div class="stick-R"></div>
+                        <div class="stick-L"></div>
+                    </div>
+                </a>
+            </div>
         </div>
     </section>
     <section id="about" class="page column page-content">
@@ -146,14 +149,43 @@
             </div>
         </section>
     </section>
+    <section id="education" class="page column page-content">
+        <div class="row">
+            <div class="textM">Education !</div>
+            <img src="assets/icons/person-icon.png" />
+        </div>
+        <div class="column">
 
+            <div class="background-effect">
+                <div class="scrolling-text-l">
+                    <span>Fezaitech</span>
+                    <span>Fezaitech</span>
+                    <span>Fezaitech</span>
+                    <span>Fezaitech</span>
+                    <span>Fezaitech</span>
+                    <span>Fezaitech</span>
+                  </div> 
+            </div>
+            <div class="background-effect">
+                <div class="scrolling-text-r">
+                    <span>Fezaitech</span>
+                    <span>Fezaitech</span>
+                    <span>Fezaitech</span>
+                    <span>Fezaitech</span>
+                    <span>Fezaitech</span>
+                    <span>Fezaitech</span>
+                  </div> 
+            </div>
+
+        </div>
+    </section>
     <section id="skills" class="page column page-content">
         <div class="row">
             <div class="textM">My Skills !</div>
-            <img src="assets/icons/-icon.png" />
+            <img src="assets/icons/person-icon.png" />
         </div>
     </section>
-    
+    <button id="scrollTopBtn" class="scroll-top-btn">↑</button>
 </body>
 <script src="script/scroll.js"></script>
 <script src="script/animation.js"></script>
