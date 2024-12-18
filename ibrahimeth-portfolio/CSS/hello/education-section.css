@@ -1,52 +1,71 @@
 #education{
-    padding-top: 70px;
-    box-sizing: border-box;
-    justify-content: start;
-    background-image: url('../../assets/wp-about.png'); /* Arkaplan resminin yolu */
-    background-position: top; /* Resmi ortala */
+  padding-top: 70px;
+  box-sizing: border-box;
+  justify-content: start;
+  background-image: url('../../assets/odin.png'); /* Arkaplan resminin yolu */
+  background-position: center; /* Resmi ortala */
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .background-effect {
-    z-index: 5;
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  z-index: -1;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.scrolling-text-l {
+  display: flex;
+  gap: 20px; 
+  position: relative;
+  color: white;
+  background: linear-gradient(to right, #eb2b052a, #ffffff2a, #ffee0000); /* Işık efekti */
+  background-size: 200%; 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  animation: scroll-left 15s linear infinite, light-effect 5s linear infinite;
+  font-size: 5rem;
+}
+.scrolling-text-r {
+  display: flex;
+  gap: 20px; 
+  position: relative;
+  color: white;
+  background: linear-gradient(to left, #eb2b052a, #ffffff2a, #ffee0000); /* Işık efekti */
+  background-size: 200%; 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  animation: scroll-right 15s linear infinite, light-effect 5s linear infinite;
+  font-size: 5rem;
+}
+
+.scrolling-text span {
+  flex-shrink: 0; 
+}
+@keyframes light-effect {
+  0% {
+      background-position: 200% 0;
   }
-  
-  .scrolling-text-l {
-    display: flex;
-    gap: 20px; 
-    animation: scroll-left 15s linear infinite;
-    font-size: 5rem;
-    color: rgba(255, 255, 255, 0.177);
+  100% {
+      background-position: -200% 0;
   }
-  .scrolling-text-r {
-    display: flex;
-    gap: 20px; 
-    animation: scroll-right 15s linear infinite;
-    font-size: 5rem;
-    color: rgba(255, 255, 255, 0.177);
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
   }
-  
-  .scrolling-text span {
-    flex-shrink: 0; 
+  100% {
+    transform: translateX(-100%);
   }
-  
-  @keyframes scroll-left {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+}
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-100%);
   }
-  @keyframes scroll-right {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(100%);
-    }
+  100% {
+    transform: translateX(100%);
   }
+}
