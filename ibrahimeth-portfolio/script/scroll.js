@@ -9,6 +9,9 @@ window.addEventListener('scroll', () => {
   } else {
     header.classList.remove('scrolled');
   }
+
+
+
 });
 
 // Hamburger Menü için
@@ -57,3 +60,4 @@ scrollTopBtn.addEventListener('click', () => {
     behavior: 'smooth' 
   });
 });
+

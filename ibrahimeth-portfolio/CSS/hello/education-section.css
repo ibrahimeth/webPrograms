@@ -1,12 +1,94 @@
 #education{
   padding-top: 70px;
+  padding-bottom: 70px;
   box-sizing: border-box;
   justify-content: start;
-  background-image: url('../../assets/odin.png'); /* Arkaplan resminin yolu */
+  background-image: url('../../assets/wp-lines.png'); /* Arkaplan resminin yolu */
   background-position: center; /* Resmi ortala */
   background-size: contain;
-  background-repeat: no-repeat;
 }
+
+.school-box {
+  box-sizing: border-box;
+  overflow: hidden;
+  gap: 10px;
+  transition: background-color 0.4s ease;
+  max-width: 100%; /* Kutu genişliğini sınırlamak için */
+  display: flex; /* İçerikleri yan yana yerleştirmek için */
+  align-items: center; /* İçerikleri dikey hizalamak için */
+  gap: 1rem; /* İçerikler arasında boşluk bırakmak için */
+}
+.school-box:hover{
+  background-color: transparent;
+}
+
+.textS {
+  flex: 1; /* Metin kutusu kalan alanı kaplayacak şekilde genişler */
+}
+
+.school-logo {
+  width: clamp(80px, 7vw, 120px);
+  height: clamp(80px, 7vw, 120px);
+  max-width: 100%; /* Resmin genişliği kutuyu aşmasın */
+  max-height: 150px; /* Yüksekliği sınırlamak için */
+}
+
+
+#win-gif{
+  border-radius: 50%;
+  height: auto;
+  width: auto;
+  justify-content: center;
+  align-self: center; 
+  transform-origin: center; /* Döndürme merkezi */
+  transition: transform 0.1s linear; /* Pürüzsüz döndürme animasyonu */
+}
+
+#win-gif.rotate {
+  transform: rotate(360deg); /* Tam dönüş */
+}
+
+
+@media (max-width: 900px) {
+  #win-gif{
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  #win-gif{
+    display: inline;
+    width: fit-content;
+    justify-content: center;
+    align-self: center;
+    border-radius: 50%;
+  }
+  
+  #education-row-align-id{
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .background-effect {
   z-index: -1;
   position: relative;
@@ -22,7 +104,7 @@
   gap: 20px; 
   position: relative;
   color: white;
-  background: linear-gradient(to right, #eb2b052a, #ffffff2a, #ffee0000); /* Işık efekti */
+  background: linear-gradient(to left, #eb2b052a, #ffffff2a, #ffee0000); /* Işık efekti */
   background-size: 200%; 
   -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent; 

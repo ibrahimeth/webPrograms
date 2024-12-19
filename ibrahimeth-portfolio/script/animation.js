@@ -84,6 +84,16 @@ document.querySelector(".image-container").addEventListener("mouseleave", functi
                   const sectionHeight = section.clientHeight;
                   if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
                       current = section.getAttribute("id");
+                      if(current == "about" || current == "education"){
+                        const gifElement = document.getElementById('win-gif');
+                        const scrollPosition = window.scrollY; 
+                      
+                        const rotationAngle = scrollPosition / 3  // 360 dereceden fazla olmasın
+                      
+                        
+                        gifElement.style.transform = `rotate(${rotationAngle}deg)`;
+                      
+                      }
                   }
               });
 

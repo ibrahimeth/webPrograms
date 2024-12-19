@@ -28,7 +28,11 @@
 }
 #home{
     background-color: #0000001b;
-   
+    min-height: 100vb;
+    background-image: url('../../assets/odin.png'); /* Arkaplan resminin yolu */
+    background-position: center; /* Resmi ortala */
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #particles-js {

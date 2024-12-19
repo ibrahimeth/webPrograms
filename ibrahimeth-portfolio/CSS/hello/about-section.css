@@ -1,5 +1,6 @@
 #about{
     padding-top: 70px;
+    min-height: 100vb;
     box-sizing: border-box;
     justify-content: start;
     background-image: url('../../assets/wp-about.png'); /* Arkaplan resminin yolu */
