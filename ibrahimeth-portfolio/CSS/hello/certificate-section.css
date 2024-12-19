@@ -6,3 +6,7 @@
     background-image: url('../../assets/wp-about.png'); /* Arkaplan resminin yolu */
     background-position: start; /* Resmi ortala */
 }
+
+.certificate-logo-img{
+    width: clamp(20px, 3vw, 60px);
+}

@@ -7,16 +7,19 @@
   background-position: center; /* Resmi ortala */
   background-size: contain;
 }
-
+#education-row-align-id{
+  gap: 4%;
+}
 .school-box {
   box-sizing: border-box;
   overflow: hidden;
   gap: 10px;
   transition: background-color 0.4s ease;
-  max-width: 100%; /* Kutu genişliğini sınırlamak için */
-  display: flex; /* İçerikleri yan yana yerleştirmek için */
-  align-items: center; /* İçerikleri dikey hizalamak için */
-  gap: 1rem; /* İçerikler arasında boşluk bırakmak için */
+  max-width: 100%; 
+  display: flex; 
+  align-items: center; 
+  width: 100%;
+  gap: 1rem; 
 }
 .school-box:hover{
   background-color: transparent;
@@ -29,23 +32,23 @@
 .school-logo {
   width: clamp(80px, 7vw, 120px);
   height: clamp(80px, 7vw, 120px);
-  max-width: 100%; /* Resmin genişliği kutuyu aşmasın */
-  max-height: 150px; /* Yüksekliği sınırlamak için */
+  max-width: 100%; 
+  max-height: 150px; 
 }
 
 
 #win-gif{
   border-radius: 50%;
-  height: auto;
-  width: auto;
+  min-width: clamp(80px, 7vw, 120px);
+  min-height : clamp(80px, 7vw, 120px);
   justify-content: center;
   align-self: center; 
-  transform-origin: center; /* Döndürme merkezi */
-  transition: transform 0.1s linear; /* Pürüzsüz döndürme animasyonu */
+  transform-origin: center; 
+  transition: transform 0.1s linear; 
 }
 
 #win-gif.rotate {
-  transform: rotate(360deg); /* Tam dönüş */
+  transform: rotate(360deg); 
 }
 
 

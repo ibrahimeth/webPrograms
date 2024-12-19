@@ -15,7 +15,6 @@ a{
 
 .icon{
     width: clamp(20px, 2vw, 30px);
-    
 }
 body{
     padding: 0px;
