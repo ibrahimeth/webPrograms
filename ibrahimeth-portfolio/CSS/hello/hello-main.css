@@ -16,6 +16,24 @@ a{
 .icon{
     width: clamp(20px, 2vw, 30px);
 }
+
+.container{
+    opacity: 0; 
+    transform: translateY(30px); 
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; 
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(4px); 
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: clamp(5px, 3vw, 10px);
+    background-color: #00060e5b;
+    border: solid 2px black;
+}
+.container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 body{
     padding: 0px;
     margin: 0px;

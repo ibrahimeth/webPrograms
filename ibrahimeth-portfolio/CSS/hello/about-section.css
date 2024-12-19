@@ -3,8 +3,8 @@
     min-height: 100vb;
     box-sizing: border-box;
     justify-content: start;
-    background-image: url('../../assets/wp-about.png'); /* Arkaplan resminin yolu */
-    background-position: top; /* Resmi ortala */
+    background-image: url('../../assets/wp-about.png'); 
+    background-position: top; 
 }
 
 #about-row-div{

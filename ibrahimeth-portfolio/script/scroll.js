@@ -26,10 +26,19 @@ hamburger.addEventListener('click', () => {
 
 
 const boxes = document.querySelectorAll('.about-box');
+const boxes2 = document.querySelectorAll('.container');
 
 function checkBoxes() {
     const triggerBottom = window.innerHeight * 1; // Ekranın %80 yüksekliği
+    boxes2.forEach(box => {
+      const boxTop = box.getBoundingClientRect().top;
 
+      if (boxTop < triggerBottom) {
+          box.classList.add('show'); 
+      } else {
+          //ox.classList.remove('show'); 
+      }
+    });
     boxes.forEach(box => {
         const boxTop = box.getBoundingClientRect().top;
 

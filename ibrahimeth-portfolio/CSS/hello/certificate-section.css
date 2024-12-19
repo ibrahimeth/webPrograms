@@ -8,5 +8,16 @@
 }
 
 .certificate-logo-img{
-    width: clamp(20px, 3vw, 60px);
+    max-width: clamp(50px, 5vw, 80px);
+    max-height: clamp(30px, 5vw, 60px);
+    height: auto;
 }
+
+.certificate-container{
+    
+}
+
+.grid .row{
+    gap: clamp(10px, 2vw, 20px);
+}
+
