@@ -28,6 +28,7 @@
 }
 #home{
     background-color: #0000001b;
+    min-height: 100vb;
 }
 #home::before{
     content: "";

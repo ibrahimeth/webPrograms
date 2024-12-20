@@ -84,7 +84,9 @@ document.querySelector(".image-container").addEventListener("mouseleave", functi
                   const sectionHeight = section.clientHeight;
                   if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
                       current = section.getAttribute("id");
-                      if(current == "about" || current == "education"){
+
+                      console.log(current);
+                      if(current == "about" || current == "education" ){
                         const gifElement = document.getElementById('win-gif');
                         const scrollPosition = window.scrollY; 
                       
