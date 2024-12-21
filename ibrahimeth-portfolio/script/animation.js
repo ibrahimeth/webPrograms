@@ -86,7 +86,7 @@ document.querySelector(".image-container").addEventListener("mouseleave", functi
                       current = section.getAttribute("id");
 
                       console.log(current);
-                      if(current == "about" || current == "education" ){
+                      if(current == "about" || current == "education" || current == "slider-type"){
                         const gifElement = document.getElementById('win-gif');
                         const scrollPosition = window.scrollY; 
                       
