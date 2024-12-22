@@ -11,9 +11,17 @@
   font-weight: bold;
   color: rebeccapurple;
 }
-
 .textS{
-  font-size: clamp(15px, 3vw, 10px);
+  font-size: clamp(15px, 2vw, 18px);
+  color: #d7d7d7;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
+.textXS{
+  font-size: clamp(10px, 3vw, 15px);
   color: #d7d7d7;
   display: flex;
   padding: 0px;
