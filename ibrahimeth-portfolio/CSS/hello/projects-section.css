@@ -1,0 +1,88 @@
+#projects{
+    padding-top: 70px;
+    justify-content: start;
+    box-sizing: border-box;
+    justify-content: start;
+    background-image: url('../../assets/wp-lines.png'); 
+    background-position: top; 
+}
+.project-post-container{
+    width: 18vw;
+    border-radius: 7px;
+    height: 300px;
+    background-color: orange;
+    display: flex;
+    align-items: end;
+}
+
+.jumper-tab-line{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-radius: 0px 0px 7px 7px;
+    background-color: palevioletred;
+}
+
+.card {
+    position: relative;
+    height:  30vh;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #1c1f26;
+    cursor: pointer;
+    transform-origin: center;       /* Dönüş merkezi ortalanır */
+}
+
+.card:hover .card-content {
+    transform: translateY(0);
+}
+.card-image{
+    object-fit: fill;
+}
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-content {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    padding-bottom: 25px;
+    width: 100%;
+    background: #222733;
+    color: white;
+    transition: transform 0.3s ease;
+    transform: translateY(75%);
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.card-content h3 {
+    margin: 0;
+    padding: 5px;
+    background-color: var(--secondary-color);
+    font-size: 18px;
+}
+
+.card-content p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.card-content a {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f1c40f;
+    color: #000;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.card-content a:hover {
+    background-color: #a0820b;
+    color: white;
+}

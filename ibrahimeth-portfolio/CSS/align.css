@@ -29,14 +29,14 @@
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: clamp(10px, 3vw, 30px)
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Elemanlar minimum 150px, maksimum eşit genişlik */
-    gap: clamp(10px, 3vw, 30px)
+    gap: clamp(10px, 3vw, 30px) 
 }
 
 .grid-container .about-box{
