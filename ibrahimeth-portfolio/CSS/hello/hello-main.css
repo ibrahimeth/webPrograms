@@ -174,7 +174,7 @@ body{
     transform: translateY(-12px) rotate(-230deg); /* Alt çizgi çapraz olur */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .nav-links {
         display: flex; 
         flex-direction: column;

@@ -1,0 +1,11 @@
+#contact{
+    padding-top: 10px;
+    padding-bottom: 70px;
+    justify-content: start;
+    box-sizing: border-box;
+    justify-content: start;
+    background-color: var(--primary-color);
+    border-top: 5px solid var(--secondary-color);
+    background-image: url('../../assets/wp6.png'); 
+    background-position: bottom; 
+}
