@@ -17,7 +17,7 @@
 }
 
 .social-media-btn:hover{
-    background-color: #c43e3e;
+    background-color: var(--secondary-color);
 }
 .social-media-btn img{
     padding: 0px;

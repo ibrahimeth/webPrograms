@@ -12,7 +12,7 @@
   color: rebeccapurple;
 }
 .textS{
-  font-size: clamp(15px, 2vw, 18px);
+  font-size: clamp(13px, 2vw, 18px);
   color: #d7d7d7;
   display: flex;
   padding: 0px;

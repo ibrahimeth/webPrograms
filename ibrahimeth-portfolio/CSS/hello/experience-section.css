@@ -85,5 +85,7 @@
     #experience-content > .row{
         flex-direction: column;
     }
-    
+    #experience-content .textS {
+        
+    }
 }

@@ -33,6 +33,27 @@
     gap: clamp(10px, 3vw, 30px)
 }
 
+/*Projeler Class için eklenen satır sutün düzeni için yazılmıştır.*/
+.grid-flat {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 1rem;
+}
+/*Projeler Class için eklenen Tagların satır sutün düzeni için yazılmıştır.*/
+.grid-tags{
+    padding-top: 1%;
+    display: flex;
+    flex-wrap: wrap;      /* taşan elemanlar bir sonraki satıra geçer */
+    column-gap: 15px;
+    row-gap: 5px;            /* kolon + satır arası boşluk */
+    align-items: flex-start;
+}
+
+.grid-tags > * {
+  flex: 0 0 auto;       /* öğe kendi içeriği kadar genişlik alır, esnemez */
+  /* istersen burada padding, border-radius, background vs. ekleyebilirsin */
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Elemanlar minimum 150px, maksimum eşit genişlik */
