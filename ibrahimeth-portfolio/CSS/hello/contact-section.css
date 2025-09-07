@@ -1,0 +1,22 @@
+#contact{
+    padding-top: 10px;
+    padding-bottom: 70px;
+    justify-content: start;
+    box-sizing: border-box;
+    justify-content: start;
+    background-color: var(--primary-color);
+    border-top: 5px solid var(--secondary-color);
+    background-image: url('../../assets/wp7.png'); 
+    background-position: top; 
+    height: 200px;
+}
+
+#contact > .column, #contact .textM{
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+}
+#contact .project-container-share-button-text {
+    width: Clamp(50px, 10vw, 120px);
+}
