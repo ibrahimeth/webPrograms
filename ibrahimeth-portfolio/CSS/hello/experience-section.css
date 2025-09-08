@@ -1,6 +1,6 @@
 #experiance{
     padding-top: 70px;
-    padding-bottom: 8%;
+    padding-bottom: 2%;
     justify-content: start;
     box-sizing: border-box;
     justify-content: start;
@@ -80,6 +80,9 @@
     align-self: baseline;
     text-align: end;
     max-width: 230px;
+}
+#experience-content p {
+    padding-top: 1%;
 }
 @media (max-width: 720px) {
     #experience-content > .row{

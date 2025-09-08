@@ -1,6 +1,6 @@
 #about{
     padding-top: 70px;
-    min-height: 100vb;
+    padding-bottom: 3%;
     box-sizing: border-box;
     justify-content: start;
     background-image: url('../../assets/wp-about.png'); 
@@ -76,7 +76,7 @@
 }
 
 
-@media (max-width: 1230px) {
+@media (max-width: 1650px) {
     #about-row-div{
         flex-direction: column;
     }
@@ -91,8 +91,11 @@
     #about-summary-box{
         flex: 2;
     }
+    .about-box p {
+        font-size: Clamp(14px, 7vw, 16px); /* Yazı boyutunu küçült */
+    }
 }
-
+ /* Hepsi Yataya geçiyor */
 @media (max-width: 720px) {
     #about-all-align {
         flex-direction: column;
