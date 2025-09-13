@@ -1,23 +1,72 @@
 #certificate{
     padding-top: 70px;
-    min-height: 100vb;
     box-sizing: border-box;
     justify-content: start;
-    background-image: url('../../assets/wp-about.png'); /* Arkaplan resminin yolu */
+    background-image: url('../../assets/wp-lines.png'); /* Arkaplan resminin yolu */
     background-position: start; /* Resmi ortala */
 }
 
-.certificate-logo-img{
-    max-width: clamp(50px, 5vw, 80px);
-    max-height: clamp(30px, 5vw, 60px);
-    height: auto;
+.certificate-container{
+    white-space: nowrap;
+    border-radius: 7px;
+    background-color: #00060e5b;
+    border: 3px #000000 solid;
+    padding: 15px;
+    align-items: center;
+    gap: 4%;
+    margin-right: 30px;
+    box-sizing: border-box;
 }
 
-.certificate-container{
-    
+.certificate-levha{
+  width: 100%;
+  overflow: hidden;
+  width: max-content;
 }
+
+.track {
+  display: flex;
+  box-sizing: border-box;
+  animation: scroll 20s linear infinite;
+  will-change: transform;
+  transform: translateX(0);
+}
+
+
+@keyframes slide {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-900px); } /* 3 öğe × 300px */
+}
+
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%); /* sağa kaydır */
+  }
+}
+@keyframes marquee {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+
+.certificate-logo{
+  background-color: #0C1D30;
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  align-content: center;
+}
+
+#certificate p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
 
 .grid .row{
     gap: clamp(10px, 2vw, 20px);
 }
-

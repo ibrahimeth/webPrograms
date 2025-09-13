@@ -66,6 +66,33 @@
     height:  clamp(40px, 2vw,  50px);
     gap: 20px;
 }
+
+/* Buradaki bütün işlemler certificaları dizmek için oluşturulacaktır.*/
+.carousel {
+  width: 300px;              /* görünen alan */
+  overflow: hidden;
+  position: relative;
+}
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.caroousel-certificate-item {
+  min-width: 300px;          /* item genişliği container kadar */
+  flex-shrink: 0;
+  height: 150px;
+  background: #3498db;
+  color: white;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+
+
 .hide-480{
     display: flex;
 }
