@@ -100,6 +100,7 @@
     align-content: center;
     justify-content: center;
     cursor: pointer;
+    color: white;
 }
 .project-container-share-button-text > .row, .inside-row{
     gap: 10px;

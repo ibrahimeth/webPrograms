@@ -1,25 +1,57 @@
 #certificate{
     padding-top: 70px;
+    padding-bottom: 50px;
+    width: 100%;
+    background-size: contain;
     box-sizing: border-box;
-    justify-content: start;
     background-image: url('../../assets/wp-lines.png'); /* Arkaplan resminin yolu */
-    background-position: start; /* Resmi ortala */
+    background-position: center; /* Resmi ortala */
 }
 
 .certificate-container{
-    white-space: nowrap;
-    border-radius: 7px;
-    background-color: #00060e5b;
-    border: 3px #000000 solid;
-    padding: 15px;
-    align-items: center;
-    gap: 4%;
-    margin-right: 30px;
-    box-sizing: border-box;
+  border-radius: 7px;
+  min-width: Clamp(300px, 30vw, 400px);
+  height: auto;
+  background-color: #00060e5b;
+  border: 3px #000000 solid;
+  padding: 15px;
+  align-items: center;
+  gap: 4%;
+  margin-right: 30px;
+  box-sizing: border-box;
+}
+
+#certificate-track-button-div{
+  background-color: pink;
+  z-index: 3;
+  width: max-content;
+}
+.certificate-track-button{
+  position: absolute;
+  top: 50%;
+  height: 70%;
+  transform: translateY(-50%);
+  background-color: #00060e5b;
+  z-index: 2;
+  border: none;
+  border-radius: 10%;
+  padding: 10px;
+  cursor: pointer;
+}
+.certificate-track-button:hover{
+  background-color: var(--secondary-color);
+}
+#certificate-track-btn-left {
+  left: 0;  /* sola yasla */
+}
+
+#certificate-track-btn-right {
+  right: 0; /* sağa yasla */
 }
 
 .certificate-levha{
   width: 100%;
+  position: relative; 
   overflow: hidden;
   width: max-content;
 }
@@ -39,34 +71,29 @@
 }
 
 
-@keyframes slideRight {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(100%); /* sağa kaydır */
-  }
-}
-@keyframes marquee {
-  0%   { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
-}
-
-
 .certificate-logo{
   background-color: #0C1D30;
   border-radius: 10px;
-  width: 80px;
-  height: 80px;
+  width: Clamp(50px, 6vw, 80px);
+  height: Clamp(50px, 6vw, 80px);
   align-content: center;
+}
+.certificate-logo img{
+  width: Clamp(50px, 6vw, 80px);
+  align-items: baseline;
+  height: Clamp(50px, 6vw, 80px);
 }
 
 #certificate p {
-  font-size: 16px;
+  font-size: Clamp(12px, 2vw, 16px);
   font-weight: bold;
 }
 
+#certificate .project-container-share-button-text {
+  font-size: Clamp(12px, 2vw, 16px);
+}
 
 .grid .row{
     gap: clamp(10px, 2vw, 20px);
 }
+
